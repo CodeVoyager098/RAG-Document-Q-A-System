@@ -1,5 +1,0 @@
-[server]
-maxUploadSize = 200
-
-[runner]
-install_requirements = true
