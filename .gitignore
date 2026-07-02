@@ -1,0 +1,49 @@
+# Python virtual environment
+venv/
+env/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large data files (don't upload documents)
+data/
+*.pdf
+*.txt
+*.md
+
+# Vectorstore (large index files)
+vectorstore/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Temporary files
+*.zip
+*.tar.gz
+*.log
+*.tmp
+
+# Environment variables
+.env
+.env.local
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build files
+dist/
+build/
+*.egg-info/
