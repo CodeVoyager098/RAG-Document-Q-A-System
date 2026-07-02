@@ -16,7 +16,7 @@ htmlcov/
 data/
 *.pdf
 *.txt
-*.md
+# *.md   ← REMOVED THIS LINE!
 
 # Vectorstore (large index files)
 vectorstore/
