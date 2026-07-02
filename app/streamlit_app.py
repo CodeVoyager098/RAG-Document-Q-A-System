@@ -1,12 +1,50 @@
 """
-Streamlit UI for RAG Document Q&A System - WITH ENHANCED CONFIDENCE BARS
+Streamlit UI for RAG Document Q&A System - WITH ENHANCED CONFIDENCE BARS & AUTO-INSTALL
 """
 
 import streamlit as st
+import subprocess
+import sys
+import os
+
+# ===== AUTO-INSTALL MISSING PACKAGES AT RUNTIME =====
+def install_packages():
+    """Install required packages at runtime for Streamlit Cloud"""
+    packages = [
+        'PyPDF2',
+        'langchain',
+        'langchain-community',
+        'langchain-text-splitters',
+        'faiss-cpu',
+        'sentence-transformers',
+        'python-dotenv',
+        'tiktoken',
+        'pandas',
+        'numpy',
+        'requests'
+    ]
+    
+    for package in packages:
+        try:
+            # Try to import the package
+            import_name = package.replace('-', '_')
+            __import__(import_name)
+            print(f"✅ {package} already installed")
+        except ImportError:
+            print(f"📦 Installing {package}...")
+            try:
+                subprocess.check_call([sys.executable, "-m", "pip", "install", package, "--quiet"])
+                print(f"✅ Installed {package}")
+            except Exception as e:
+                print(f"⚠️ Failed to install {package}: {str(e)}")
+
+# Run auto-install
+install_packages()
+
+# Now import the rest
 import time
 import shutil
 from pathlib import Path
-import sys
 import tempfile
 import os
 from datetime import datetime
