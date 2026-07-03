@@ -29,28 +29,28 @@ A professional **Retrieval-Augmented Generation (RAG)** Document Q&A System buil
 | Language | Python 3.12 |
 
 ## 📁 Project Structure
+
 rag-document-qa/
 ├── app/
-│ └── streamlit_app.py # Main UI
+│   └── streamlit_app.py          # Main UI
 ├── src/
-│ ├── config.py # Configuration
-│ ├── document_loader.py # PDF/TXT/MD loader
-│ ├── text_processor.py # Text chunking
-│ ├── embedding_indexer.py # Embeddings & FAISS
-│ ├── retriever.py # Search & retrieval
-│ ├── llm_responder.py # LLM grounding
-│ └── evaluator.py # Evaluation metrics
-├── data/ # Uploaded documents
-├── vectorstore/ # FAISS index
-├── requirements.txt # Dependencies
-└── README.md
+│   ├── config.py                 # Configuration
+│   ├── document_loader.py        # PDF/TXT/MD loader
+│   ├── text_processor.py         # Text chunking
+│   ├── embedding_indexer.py      # Embeddings & FAISS
+│   ├── retriever.py              # Search & retrieval
+│   ├── llm_responder.py          # LLM grounding
+│   └── evaluator.py              # Evaluation metrics
+├── data/                         # Uploaded documents
+├── vectorstore/                  # FAISS index
+├── requirements.txt              # Dependencies
+└── README.md                     # Documentation
 
-text
 
 ## 🚀 Quick Start
 
 ### 1. Clone the Repository
-```bash
+
 git clone https://github.com/yourusername/rag-document-qa-system.git
 cd rag-document-qa-system
 2. Create Virtual Environment
