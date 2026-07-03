@@ -7,27 +7,8 @@ markdown
 The RAG (Retrieval-Augmented Generation) Document Q&A System is built using a modular architecture that processes documents, creates searchable embeddings, and generates grounded responses using a local LLM.
 
 ### System Architecture Diagram
-┌─────────────────────────────────────────────────────────────────────┐
-│ USER INTERFACE │
-│ (Streamlit Web Application) │
-├─────────────────────────────────────────────────────────────────────┤
-│ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────────────┐ │
-│ │ Document │ │ Text │ │ Embedding & │ │
-│ │ Uploader │───▶│ Processor │───▶│ Indexing │ │
-│ │ │ │ (Chunking) │ │ (FAISS) │ │
-│ └──────────────┘ └──────────────┘ └──────────────────────┘ │
-│ │ │
-│ ▼ │
-│ ┌──────────────┐ ┌──────────────┐ ┌──────────────────────┐ │
-│ │ Query │ │ Retrieval │ │ LLM Grounding │ │
-│ │ Input │───▶│ (FAISS │───▶│ (Ollama) │ │
-│ │ │ │ Search) │ │ │ │
-│ └──────────────┘ └──────────────┘ └──────────────────────┘ │
-│ │
-└─────────────────────────────────────────────────────────────────────┘
+<img width="1081" height="501" alt="Untitled Diagram drawio" src="https://github.com/user-attachments/assets/a28982f4-8e71-4783-af58-b2d3a00b2609" />
 
-text
 
 ---
 
