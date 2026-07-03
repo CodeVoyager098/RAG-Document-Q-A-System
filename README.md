@@ -32,21 +32,8 @@ A professional **Retrieval-Augmented Generation (RAG)** Document Q&A System buil
 ## 📁 Project Structure
 
 
-rag-document-qa/
-├── app/
-│   └── streamlit_app.py          # Main UI
-├── src/
-│   ├── config.py                 # Configuration
-│   ├── document_loader.py        # PDF/TXT/MD loader
-│   ├── text_processor.py         # Text chunking
-│   ├── embedding_indexer.py      # Embeddings & FAISS
-│   ├── retriever.py              # Search & retrieval
-│   ├── llm_responder.py          # LLM grounding
-│   └── evaluator.py              # Evaluation metrics
-├── data/                          # Uploaded documents
-├── vectorstore/                   # FAISS index
-├── requirements.txt                # Dependencies
-└── README.md                       # Documentation
+<img width="901" height="782" alt="rag_project_structure drawio" src="https://github.com/user-attachments/assets/2e5935ce-3c0c-4905-8401-7585a0e5af7b" />
+
 
 
 ## 🚀 Quick Start
